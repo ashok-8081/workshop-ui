@@ -5,10 +5,10 @@ import WorkshopCard from "../components/WorkshopCard";
 const Home = () => {
   return <div>
     <Navbar />
-    <div className="p-4 grid gap-4">
+    {/* <div className="p-4 grid gap-4">
     <WorkshopCard />
     <WorkshopCard />
-    </div>
+    </div> */}
   </div>;
 };
 
