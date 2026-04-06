@@ -1,10 +1,11 @@
-
-
+import Booking from "./pages/Booking";
+import Home from "./pages/Home";
 
 function App() {
   return (
-    <div className="App text-2xl text-blue-500 bg-sky-500">
-      <h1>Web is working</h1>
+    <div>
+      <Home />
+      <Booking />
     </div>
   );
 }
