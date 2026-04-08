@@ -6,18 +6,68 @@ import Statistics from "./pages/Statistics";
 import Status from "./pages/Status";
 import Propose from "./pages/Propose";
 import Types from "./pages/Types";
+import Layout from "./components/Layout";
 
 function App() {
   return (
     <>
       <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/home" element={<Home />} />
-        <Route path="/register" element={<Booking />} />
-        <Route path="/statistics" element={<Statistics />} />
-        <Route path="/status" element={<Status />} />
-        <Route path="/propose" element={<Propose />} />
-        <Route path="/types" element={<Types />} />
+        <Route
+          path="/"
+          element={
+            <Layout>
+              <Home />
+            </Layout>
+          }
+        />
+        <Route
+          path="/home"
+          element={
+            <Layout>
+              <Home />
+            </Layout>
+          }
+        />
+        <Route
+          path="/register"
+          element={
+            <Layout>
+              <Booking />
+            </Layout>
+          }
+        />
+        <Route
+          path="/statistics"
+          element={
+            <Layout>
+              <Statistics />
+            </Layout>
+          }
+        />
+        <Route
+          path="/status"
+          element={
+            <Layout>
+              <Status />
+            </Layout>
+          }
+        />
+        <Route
+          path="/propose"
+          element={
+            <Layout>
+              <Propose />
+            </Layout>
+          }
+        />
+        <Route
+          path="/types"
+          element={
+            <Layout>
+              <Types />
+            </Layout>
+          }
+        />
       </Routes>
     </>
   );

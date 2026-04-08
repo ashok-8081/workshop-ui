@@ -3,7 +3,9 @@ import Navbar from "../components/Navbar";
 
 const Status = () => {
   return (
-    <Navbar />
+    <div>
+      Status of workshop
+    </div>
   )
 }
 

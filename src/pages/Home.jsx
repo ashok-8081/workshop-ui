@@ -4,15 +4,12 @@ import Navbar from "../components/Navbar";
 import HeroSection from "../components/HeroSection";
 import Stats from "../components/Stats";
 
-
 const Home = () => {
   return (
     <>
-      <Navbar />
       <HeroSection />
       <Stats />
       <FeaturedWorkshops />
-      <Footer />
     </>
   );
 };

@@ -3,7 +3,9 @@ import Navbar from "../components/Navbar";
 const Types = () => {
   return (
     <div>
-      <Navbar />
+     <div>
+      Types of workshops we offer
+     </div>
     </div>
   )
 }

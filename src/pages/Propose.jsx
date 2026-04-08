@@ -3,7 +3,9 @@ import Navbar from "../components/Navbar";
 
 const Propose = () => {
   return (
-    <Navbar />
+    <div className='text-2xl text-emerald-500'>
+      Propose a workshop
+    </div>
   )
 }
 
