@@ -7,7 +7,7 @@ const BookingForm = () => {
     phone: "",
     gender: "",
     workshop: "",
-    data: "",
+    date: "",
   });
 
   const [loading, setLoading] = useState(false);
@@ -96,6 +96,7 @@ const BookingForm = () => {
                 type="radio"
                 name="gender"
                 value="male"
+                checked={formData.gender==="male"}
                 onChange={handleChange}
               />{" "}
               Male
@@ -105,6 +106,7 @@ const BookingForm = () => {
                 type="radio"
                 name="gender"
                 value="female"
+                checked={formData.gender==="female"}
                 onChange={handleChange}
               />{" "}
               Female
@@ -120,9 +122,9 @@ const BookingForm = () => {
           className="w-full border rounded-lg px-3 py-2 focus:ring-2 focus:ring-blue-400"
         >
           <option value="">Select Workshop</option>
-          <option value="python">Select Workshop</option>
-          <option value="scilab">Select Workshop</option>
-          <option value="iot">Select Workshop</option>
+          <option value="python">Python</option>
+          <option value="scilab">SciLab</option>
+          <option value="iot">IOT</option>
         </select>
 
         {/*Data Selection */}
@@ -130,6 +132,7 @@ const BookingForm = () => {
           type="date"
           name="date"
           value={formData.date}
+          onChange={handleChange}
           className="w-full border rounded-lg px-3 py-2 focus:ring-2 focus:ring-blue-400"
         />
         <button
