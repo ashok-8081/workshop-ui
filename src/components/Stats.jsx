@@ -18,7 +18,7 @@ const Stats = () => {
             <h2 className="text-3xl font-bold text-indigo-600">
               {stat.number}
             </h2>
-            <p className="text-slate-600 mt-2">{stats.label}</p>
+            <p className="text-slate-600 mt-2">{stat.label}</p>
           </div>
         ))}
       </div>
